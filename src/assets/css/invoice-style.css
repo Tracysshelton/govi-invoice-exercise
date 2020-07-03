@@ -1,0 +1,60 @@
+/* Main Container */
+.container {
+   margin: 40px auto;
+    width: 100%;
+    /* max-width: 750px; */
+    min-width: 600px; 
+}
+
+/* Page Heading */
+.heading {
+    font-size: 40px;
+    padding: 10px 0;
+    color: #444;
+    text-align: center;
+}
+
+/* search button */
+button {
+    margin: 10px;
+}
+
+/* Invoice */
+.invoice-container {
+    justify-content:  space-evenly;
+}
+
+.invoice-item {
+    padding: 10px;
+    border: 1px solid #000;
+    margin: 5px;
+}
+
+.invoices {
+    text-align: center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 3px solid #ddd;
+    width: 100%;
+}
+
+.invoices td, .invoices th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.invoices td:first-child {
+    text-align: left;
+}
+
+.invoices tr:nth-child(even){background-color: #f2f2f2;}
+
+.invoices tr:hover {background-color: #ddd;}
+
+.invoices th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}
