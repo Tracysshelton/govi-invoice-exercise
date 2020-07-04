@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Invoice from './Invoice'
 import Pagination from './Pagination'
-import '../assests/css/invoice-style.css'
+import '../assets/css/invoice-style.css'
 import useInvoiceSearch from '../hooks/useInvoiceSearch'
 
 const InvoiceSearch = () => {
