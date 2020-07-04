@@ -47,11 +47,11 @@ const InvoiceSearch = () => {
                 <h1>Invoice Search</h1>
                 <button
                     onClick={returnAllInvoices}>
-                    All invoices
+                    All Invoices
                 </button>
                 <button
                     onClick={returnAllPaidInvoices}>
-                    Paid invoices
+                    Paid Invoices
                 </button>
                 <button
                     onClick={returnAllUnPaidInvoices}>
