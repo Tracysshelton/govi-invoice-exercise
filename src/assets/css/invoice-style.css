@@ -17,19 +17,10 @@
 /* search button */
 button {
     margin: 10px;
+    cursor: pointer;
 }
 
 /* Invoice */
-.invoice-container {
-    justify-content:  space-evenly;
-}
-
-.invoice-item {
-    padding: 10px;
-    border: 1px solid #000;
-    margin: 5px;
-}
-
 .invoices {
     text-align: center;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
