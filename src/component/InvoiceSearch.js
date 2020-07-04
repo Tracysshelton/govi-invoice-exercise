@@ -16,8 +16,6 @@ const InvoiceSearch = () => {
         invoices
     } = useInvoiceSearch()
 
-    console.log(invoices)
-
     const returnAllInvoices = () => {
         setCurrentPage(1)
         setOutput(invoices)
