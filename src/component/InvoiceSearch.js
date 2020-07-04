@@ -16,23 +16,20 @@ const InvoiceSearch = () => {
         invoices
     } = useInvoiceSearch()
 
-    const returnAllInvoices = () => {
+    const returnInvoices = (e) => {
+        let searched = e.target.value
         setCurrentPage(1)
-        setOutput(invoices)
-    }
-
-    const returnAllPaidInvoices = () => {
-        setCurrentPage(1)
-        setOutput(invoices.filter(invoice => {
-            return invoice.paid === true
-        }))
-    }
-
-    const returnAllUnPaidInvoices = () => {
-        setCurrentPage(1)
-        setOutput(invoices.filter(invoice => {
-            return invoice.paid === false
-        }))
+        if(searched === "allInvoices" ) {
+            setOutput(invoices)
+        } else if (searched === "allPaidInvoices") {
+            setOutput(invoices.filter(invoice => {
+                return invoice.paid === true
+            }))
+        } else if (searched === "allUnpaidInvoices") {
+            setOutput(invoices.filter(invoice => {
+                return invoice.paid === false
+            }))
+        }
     }
 
     const indexOfLastInvoice = currentPage * invoicesPerPage
@@ -46,15 +43,18 @@ const InvoiceSearch = () => {
             <div>
                 <h1>Invoice Search</h1>
                 <button
-                    onClick={returnAllInvoices}>
+                    value="allInvoices"
+                    onClick={returnInvoices}>
                     All Invoices
                 </button>
                 <button
-                    onClick={returnAllPaidInvoices}>
+                    value="allPaidInvoices"
+                    onClick={returnInvoices}>
                     Paid Invoices
                 </button>
                 <button
-                    onClick={returnAllUnPaidInvoices}>
+                    value="allUnpaidInvoices"
+                    onClick={returnInvoices}>
                     UnPaid Invoices
                 </button>
             </div>
