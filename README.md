@@ -1,16 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Govi Exercise
-This is the invoice exercise for Govi.
+## GoVi Exercise
+This is the invoice exercise for GoVi.
 
 ## Installation
-Clone the Highspot-coding-exercise repository:
+Clone the govi-invoice-exercise repository:
 git clone https://github.com/Tracysshelton/govi-invoice-exercise
 
 ## Application Setup
 Open a command prompt, and navigate (cd) to the govi-invoice-exercise directory.
 
-Type the following command to install the react and react-dom modules:
+Type the following command to install npm modules:
 
 npm install
 
@@ -20,7 +20,7 @@ npm install axios
 
 ## Build
 
-On the command line, make sure you are in the highspot-exercise directory, type npm run-script build
+On the command line, make sure you are in the govi-invoice-exercise directory, type npm run-script build
 
 Install serve type, npm install -g serve
 
